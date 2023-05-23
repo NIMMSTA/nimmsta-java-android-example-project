@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements NIMMSTAEventHandl
 
                             result.getResult().enableBackgroundAndNotifications();
 
-                            if (!serviceConnection.isConnected()) {
+                            if (!serviceConnection.getHasActiveConnections()) {
                                 serviceConnection.displayConnectionActivity();
                             }
 
